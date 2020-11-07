@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v1
-    - uses: guilhermebresser/github-mirror-action@latest
+    - uses: guilhermebresser/github-mirror-action@v1
       with:
         target_repo_url:
           ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/teste
