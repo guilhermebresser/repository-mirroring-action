@@ -6,8 +6,9 @@ jobs:
   to_codecommit:                                        # <-- different jobs are executed in parallel.
     runs-on: ubuntu-18.04
     steps:
+    - name: "Repository Mirror"
     - uses: actions/checkout@v1
-    - uses: guilhermebresser/github-mirror-action@v1
+    - uses: guilhermebresser/repository-mirroring-action@v1
       with:
         target_repo_url:
           ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/teste
